@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 from matplotlib import pyplot as plt
 
 def analyze(filename):
@@ -21,4 +22,8 @@ def analyze(filename):
     plt.tight_layout()
     plt.show()
 
-analyze('inflammation-01.csv')
+script = sys.argv[0]
+inputfile = sys.argv[1]
+outputfile = sys.argv[2]
+
+
